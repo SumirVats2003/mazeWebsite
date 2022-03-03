@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Git Notes</title>
+	<script src="https://kit.fontawesome.com/1801282281.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/git.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/links.css">
+    <link rel="stylesheet" href="css/sticky.css">
+    <link rel="stylesheet" href="css/noteFoot.css">
+    <link rel="shortcut icon" href="img/git-orange.png">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <ul class="list">
+            <li class="items"><a href="index.html">Home</a></li>
+            <li class="items"><a href="about.html">About</a></li>
+            <li class="items"><a href="contact.html">Contact Us</a></li>
+            <li class="items"><a href="https://github.com/SumirVats2003/MyNotes">Fork on <i class="fab fa-github"></i></a></li>
+        </ul>
+    </nav>
+    <div class="theory">
+        <img src="img/git-orange.png" alt="git">
+        <h1 class="heading">GIT</h1>
+        <p>
+            Git is a distributed version control system which was made by Linus Torvalds. Git is a very popular software due to its flexibility and easy usage. Git provides us a platform where we can do anything with our code and still can fallback. Git is superuseful when it comes to bigger and real life projects. That is a reason why software engineers should use it. In this page, we have listed the git commands which you will be using the most at the time of software development. However, git is not limited to this, it can go far beyond and that is something more advanced and hence, out of the scope of this page.
+        </p>
+        <span>
+            <a href="https://git-scm.com/" target="_blank">Git Official Website</a>
+        </span>
+    </div>
+
+    <div class="main">
+
+        <h2 class="topic">Initial Steps</h2>
+        <hr>
+
+        <p>
+            The following commands are single use and are used to configure git with your username and email
+        </p>
+
+        <h3 class="subTopic">Set Username</h3>
+        <div class="pallet">
+            <div class="command">
+                $ git config --global user.name "User Name"
+            </div>
+            <div class="explain">
+                Configure your git username as User Name with this command. Your username appears when you commit changes in your repository
+            </div>
+        </div>
+
+        <h3 class="subTopic">Set Email</h3>
+        <div class="pallet">
+            <div class="command">
+                $ git config --global user.email "user@xyz.com"
+            </div>
+            <div class="explain">
+                Configure your email as user@xyz.com with this command. Your email will be stored when you commit changes in your repository.
+            </div>
+        </div>
+
+        <h2 class="topic">Using git commands in your repository</h2>
+        <hr>
+
+        <h3 class="subTopic">Initialize Git Repository</h3>
+        <div class="pallet">
+            <div class="command">
+                $ git init
+            </div>
+            <div class="explain">
+                Initialize empty Git Repository
+            </div>
+        </div>
+
+        <h3 class="subTopic">View Status of the Repository</h3>
+        <div class="pallet">
+            <div class="command">
+                $ git status
+            </div>
+            <div class="explain">
+                View the status of the repository
+            </div>
+        </div>
+
+        <h3 class="subTopic">Add all files to git repository</h3>
+        <div class="pallet">
+            <div class="command">
+                $ git add .
+            </div>
+            <div class="explain">
+                Move all files of the directory to the staging area. Now, all your files are tracked by git. You can also use
+                <b>"git add --a"</b>
+                to stage/track all your files.
+            </div>
+        </div>
+
+        <h3 class="subTopic">Add a specific file to git repository</h3>
+        <div class="pallet">
+            <div class="command">
+                $ git add {filename}
+            </div>
+            <div class="explain">
+                Move file to the staging area. Now, this file is tracked by git.
+            </div>
+        </div>
+
+        <h3 class="subTopic">Commit changes to repository</h3>
+        <div class="pallet">
+            <div class="command">
+                $ git commit -m "Commit Message"
+            </div>
+            <div class="explain">
+                Commit the changes made to the repository. The state of the repository at the time of commit will be timestamped by git. Note that git captures snapshots of the repository, not differences between two commits. Also, try to set the commit message in such a way that it precisely describes the change made before commiting it.
+            </div>
+        </div>
+
+        <h3 class="subTopic">Commit changes to repository skipping the staging area</h3>
+        <div class="pallet">
+            <div class="command">
+                $ git commit -a -m "Commit message"
+            </div>
+            <div class="explain">
+                Commit all the TRACKED and MODIFIED files directly, skipping the staging area.
+            </div>
+        </div>
+
+        <h3 class="subTopic">See Commit History</h3>
+        <div class="pallet">
+            <div class="command">
+                $ git log
+            </div>
+            <div class="explain">
+                Check commit history with this command. It displays the username and email of the commit maker, along with the commit code, date and time, and also the commit message.
+            </div>
+        </div>
+
+        <h2 class="topic">Deletions in Git Repository</h2>
+        <hr>
+
+        <h3 class="subTopic">Delete git repository</h3>
+        <div class="pallet">
+            <div class="command">
+                $ rm -rf .git
+            </div>
+            <div class="explain">
+                Delete the git repository by deleting the hidden .git directory which stores all the repository data. Note that this action does not delete your files, however, your git repository is destroyed.
+            </div>
+        </div>
+
+        <h3 class="subTopic">Delete/Untrack specific file</h3>
+        <div class="pallet">
+            <div class="command">
+                $ git rm {filename}
+            </div>
+            <div class="explain">
+                Untrack file/ Delete file from git repository (Note that the file will not be deleted, however it will be untracked by git).
+            </div>
+        </div>
+    </div>
+
+	<footer>
+		<div class="foot">
+			<p>&copy; MyNotes</p>
+			<div class="social">
+				<a href="https://github.com/SumirVats2003/MyNotes"><i class="fab fa-github-square"></i></a>
+				<a href="#"><i class="fab fa-facebook-square"></i></a>
+				<a href="#"><i class="fab fa-instagram-square"></i></a>
+				<a href="#"><i class="fab fa-linkedin"></i></a>
+			</div>
+		</div>
+	</footer>
+
+</body>
+<script type="text/javascript" src="js/sticky.js">
+</script>
+</html>
