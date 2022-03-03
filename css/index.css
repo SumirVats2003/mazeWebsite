@@ -51,8 +51,14 @@
 }
 
 .intro img {
-	height: 15rem;
-	margin: 2em 3em;
+	height: 15rem; 
+	margin: 1vh 3em;
+}
+
+.intro .logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .intro .text {
@@ -61,10 +67,9 @@
 }
 
 .intro p {
-	font-size: 0.9em;
 	text-align: center;
 	width: 80vw;
-	padding: 2rem 3rem;
+	padding: 1.5rem 3rem;
 }
 
 .intro .btn {
@@ -187,10 +192,24 @@ footer a{
 	margin: 2rem;
 }
 
-.social i {
+.social {
+	background-color: var(--dark);
+}
+
+.social a i {
+	/* color: var(--nav); */
 	text-align: center;
 	font-size: 2.5rem;
 	margin: 1.5rem;
+}
+
+#sect .social a i {
+	margin: 0.2rem 1.5rem;
+	color: white;
+}
+
+#sect .social a i:hover {
+	color: rgb(197, 197, 197);
 }
 
 footer p {
