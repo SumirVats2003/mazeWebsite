@@ -1,6 +1,6 @@
 # M.A.Z.E Website
 
-## Web Dev Competition
+## Web Dev Competition organised by MTS AUV ZHCET
 <br/>
 Submission made by:
 <ul>
